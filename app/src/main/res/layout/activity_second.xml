@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juacalla.labexer.SecondActivity">
+
+
+    <Button
+        android:id="@+id/btn_load1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:onClick="LoadSP"
+        android:text="Load Shared Preferences" />
+
+    <Button
+        android:id="@+id/btn_load2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_load1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:onClick="LoadIS"
+        android:text="Load Internal Storage" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_load2"
+        android:layout_alignStart="@+id/btn_load2"
+        android:layout_below="@+id/btn_load2"
+        android:layout_marginTop="45dp"
+        android:onClick="Clear"
+        android:text="clear" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_clear"
+        android:layout_alignBottom="@+id/btn_clear"
+        android:layout_alignEnd="@+id/btn_load2"
+        android:layout_alignRight="@+id/btn_load2"
+        android:onClick="Back"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_clear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:text="Display"
+        android:textSize="20dp" />
+</RelativeLayout>
